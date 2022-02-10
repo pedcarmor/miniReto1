@@ -8,7 +8,7 @@ public class Mayores10 {
 		
 		List<Integer> numbers = List.of(18,6,4,15,55,78,12,9,8);
 		
-		Long mayores10 = numbers.stream().filter(l->l.intValue()>10).count();
+		Long mayores10 = numbers.stream().filter(l->l>10).count();
 		System.out.println(mayores10);
 	}
 }
