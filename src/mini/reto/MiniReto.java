@@ -9,16 +9,12 @@ public class MiniReto {
 
 	public static void main(String[] args) {
 	
-		List<String> list = new ArrayList<String>();
-		list.add("Juan Jimenez");list.add("Pepe Garcia");list.add("Juan Garcia");list.add("Pepe Jimenez");
+		List<String> list = List.of("Juan Garcia", "Pepe Jimenez", "Juan Jimenes", "Pepe Garcia");
 		
 		List<String> ls = list.stream().filter(p->p.endsWith("a")).collect(Collectors.toList());
 		System.out.println(ls);
 		
-		
 		DoubleStream stream = DoubleStream.of(5.2, 4.2, 6.3).map(p->p +2.5);
 		stream.forEach(System.out::println);
-
 	}
-
 }
